@@ -1,0 +1,13 @@
+.cardsContainer {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  gap: 15px;
+  /* background-image: url(/model.png); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 2% 2%;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
