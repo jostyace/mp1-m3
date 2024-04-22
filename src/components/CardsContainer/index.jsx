@@ -11,7 +11,7 @@ export const CardsContainer = ({openModal, setOpenModal, results}) => {
 
   return (
     <>
-        <Search   />
+     
         <div className="cardsContainer">
         <div className='staysHeader'>
           <h1>Stays in Finland</h1>
