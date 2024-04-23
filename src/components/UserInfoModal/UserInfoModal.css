@@ -197,3 +197,8 @@ iframe {
 .closeModal {
   height: 45%;
 }
+.guestsSelector {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

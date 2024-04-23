@@ -8,6 +8,7 @@ export const Room = ({id, image, superhost, type, rating, beds, title, onClick})
         <div id={id} className="room">
             <div style={{backgroundImage: `url(${image})`, backgroundPosition: 'center', backgroundSize: 'cover'}} className="roomImage">
             </div>
+            
             <div className="roomData">
                 <div className='roomInfo'>
                     {superhost === true ? <h1 className='superHost'>Super host</h1> : null }

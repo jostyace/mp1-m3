@@ -39,7 +39,7 @@ export const UserInfoModal = ({setOpenModal, city, setCity, guests, setGuests, a
             <div className='searchHolder'>
                 <label htmlFor="citySearch" className='inpLabel'>LOCATION</label>
                 <input onClick={showSelectCity}  onChange={(e)=>setCity(e.target.value)} id="citySearch" className='cityInputOpen inputOpen' placeholder='Helsinki, Finland' value={city}></input>
-                {showCities && <ul className='citySelect'>
+                {showCities && <ul className='citySelect citySelector'>
                     <li onClick={(e)=>{hideSelectCity(e)}} className='cityOption' value="Helsinki">
                         <svg className="locationIcon" viewBox="0 0 282 367" version="1.1" xmlns="http://www.w3.org/2000/svg">
                             <g id="#ffffffff">
@@ -89,14 +89,14 @@ export const UserInfoModal = ({setOpenModal, city, setCity, guests, setGuests, a
                     <div className='guestContainer' id="adults">
                         <strong>Adults</strong>
                         <p>Ages 13 or Above</p>
-                        <div>
+                        <div className='guestsSelector'>
                         <button className="material-icons" onClick={()=>setAdults(adults+1)}>add</button> {adults} <button className="material-icons" onClick={()=>setAdults(adults-1)}>remove</button>
                         </div>
                     </div>
                     <div className='guestContainer' id="adults">
                         <strong>Kids</strong>
                         <p>Ages 1 - 12</p>
-                        <div>
+                        <div className='guestsSelector'>
                         <button className="material-icons" onClick={()=>setKids(kids+1)} >add</button> {kids} <button className="material-icons" onClick={()=>setKids(kids-1)}>remove</button>
                         </div>
                     </div>
@@ -105,7 +105,7 @@ export const UserInfoModal = ({setOpenModal, city, setCity, guests, setGuests, a
                 }
                 </div>
             
-            <div className='searchHolder'>
+            <div className='searchHolder btnSearchSM'>
                 <button onClick={filtrar}  className=' searchBtnOpen'>
                     <svg className='searchBtn searchIconOpen' viewBox="0 0 245 288" version="1.1" xmlns="http://www.w3.org/2000/svg">
                         <g >

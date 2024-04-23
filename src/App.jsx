@@ -19,10 +19,26 @@ function App() {
      }, [data]);
 
      function filtrar() {
+      if (guests > 0 && city != '') {
       const citySearch = city.split(', ')[0];
       const newData = data.filter(room => room.city === citySearch && room.maxGuests >= guests)
       setResults(newData)
       setOpenModal(false)
+      }
+
+      if (guests >= 0 && city === '') {
+        const newData = data.filter(room => room.maxGuests >= guests)
+        setResults(newData)
+        setOpenModal(false)
+      }
+
+      if (guests === 0 && city != '') {
+        const citySearch = city.split(', ')[0];
+        const newData = data.filter(room => room.city >= citySearch)
+        setResults(newData)
+        setOpenModal(false)
+      } 
+
      }
 
   useEffect(() => {

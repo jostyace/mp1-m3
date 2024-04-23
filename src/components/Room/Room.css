@@ -1,7 +1,7 @@
 .room {
   max-width: 430px;
   width: 30%;
-  height: 390px;
+  height: auto;
   background-color: transparent;
   border-radius: 7px;
   /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
@@ -100,16 +100,120 @@ a {
     width: 90vw;
     max-width: 90vw;
   }
+  .NavBar {
+    padding: 16px !important;
+  }
+  .cityInput,
+  input {
+    width: 35% !important;
+    font-size: 13px !important;
+    height: 60px !important;
+    line-height: 60px;
+  }
+  .SearchContainer {
+    width: 100%;
+    margin: 25px 30px;
+  }
 }
+@media (max-width: 768px) {
+  .room {
+    width: 90vw;
+    max-width: 90vw;
+  }
+  .NavBar {
+    padding: 16px !important;
+  }
+  .roomImage {
+    height: 220px;
+  }
+
+  .cityInput,
+  input {
+    width: 35% !important;
+    font-size: 13px !important;
+    height: 60px !important;
+    line-height: 60px;
+  }
+  .SearchContainer {
+    width: 100%;
+    margin: 25px 30px;
+  }
+  .room {
+    width: 90vw;
+    max-width: 90vw;
+  }
+
+  .modalContainer {
+    flex-wrap: wrap !important;
+    justify-content: center;
+    align-content: flex-start;
+    gap: 15px;
+    height: 900px !important;
+  }
+  .searchHolder {
+    width: 90% !important;
+    height: 60px;
+  }
+
+  .citySelector {
+    top: 80px;
+    position: relative;
+  }
+
+  .btnSearchSM {
+    position: relative;
+    bottom: -250px;
+  }
+}
+@media (max-width: 1024px) {
+  .room {
+    width: 90vw;
+    max-width: 90vw;
+  }
+}
+
+@media (max-width: 1536px) {
+  .room {
+    width: 90vw;
+    max-width: 90vw;
+  }
+}
+
 @media (min-width: 768px) {
-  ...;
+  .room {
+    width: 45% !important;
+    max-width: 90vw;
+  }
+  .roomImage {
+    height: 240px;
+  }
 }
+
 @media (min-width: 1024px) {
-  ...;
+  .roomImage {
+    height: 180px;
+  }
+  .room {
+    width: 30% !important;
+    max-width: 90vw;
+  }
 }
+
 @media (min-width: 1280px) {
-  ...;
+  .room {
+    width: 30% !important;
+    max-width: 90vw;
+  }
+  .roomImage {
+    height: 240px;
+  }
 }
 @media (min-width: 1536px) {
-  ...;
+  .room {
+    width: 30% !important;
+    max-width: 90vw;
+  }
+  .roomImage {
+    height: 240px;
+  }
 }
