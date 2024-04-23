@@ -94,3 +94,22 @@ a {
   font-weight: 600;
   color: #4f4f4f;
 }
+
+@media (max-width: 640px) {
+  .room {
+    width: 90vw;
+    max-width: 90vw;
+  }
+}
+@media (min-width: 768px) {
+  ...;
+}
+@media (min-width: 1024px) {
+  ...;
+}
+@media (min-width: 1280px) {
+  ...;
+}
+@media (min-width: 1536px) {
+  ...;
+}
